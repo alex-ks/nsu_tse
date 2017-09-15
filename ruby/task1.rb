@@ -10,15 +10,14 @@
 # точностью до перестановки.
 
 def task1(alphabet, n)
-    result = alphabet.map { |c| c.to_str }
-    (1...n).reduce(result) { 
+    (1..n).reduce([[]]) { 
         |result, _| 
-        result.map { 
+        result.flat_map { 
             |str| 
             alphabet.select { |c| c != str[-1] }
-                    .map { |c| str + c }
-        }.flatten
+                    .map { |c| str + [c] }
+        }
     }
 end
 
-puts task1(['a', 'b', 'c'], 3)
+puts task1(['a', 'b', 'c'], 3).inspect
