@@ -21,7 +21,11 @@ private
             |i|
             Thread.new {
                 start = i * chunkSize
-                finish = if (i + 1) * chunkSize < @array.length then (i + 1) * chunkSize else @array.length end
+                finish = if (i + 1) * chunkSize < @array.length then 
+                            (i + 1) * chunkSize 
+                         else 
+                            @array.length 
+                         end
 
                 puts ["Chunk size:", finish - start, "Tid:", Thread.current.object_id].inspect
 
@@ -92,9 +96,6 @@ public
 end
 
 ma = ParallelArray.new((1..30).to_a)
-ParallelArray.threadCount = 2
-puts ParallelArray.threadCount
-puts ma.threadCount
 
 puts ma.map {|i| i * 2 }.inspect
 puts ma.select {|i| i % 2 == 0 }.inspect
