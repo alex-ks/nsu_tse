@@ -38,17 +38,18 @@ class Task
     def Task.threadCount 
         @@threadCount
     end
-    
+
     def initialize (&task)
         @mutex = Mutex.new
         @condVar = ConditionVariable.new
         @finished = false
+        @exception = nil
 
         @@threadPool.enqueueTask {
             begin
                 @value = task.call()
-            rescue _
-                @value = nil
+            rescue Exception => e
+                @exception = e
             end
             @mutex.synchronize {
                 @finished = true
@@ -63,6 +64,7 @@ class Task
                 @condVar.wait(@mutex)
             end
         }
+        if @exception != nil then raise @exception end
         @value
     end
 end
