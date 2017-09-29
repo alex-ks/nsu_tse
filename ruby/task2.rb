@@ -11,27 +11,79 @@
 
 require 'thread'
 
-class Array
-    @@threadCount = 4
+class Threadpool
+    def initialize(threadCount)
+        @queue = Queue.new
+        @working = true
+        @threads = (1..threadCount).map { 
+            |_| 
+            Thread.new {
+                while @working do
+                    task = @queue.pop()
+                    task.call()
+                end
+            }
+        }.to_a
+    end
 
+    def enqueueTask(&task)
+        @queue.push(task)
+    end
+end
+
+class Task
+    @@threadCount = 4
+    @@threadPool = Threadpool.new @@threadCount
+
+    def Task.threadCount 
+        @@threadCount
+    end
+    
+    def initialize (&task)
+        @mutex = Mutex.new
+        @condVar = ConditionVariable.new
+        @finished = false
+
+        @@threadPool.enqueueTask {
+            begin
+                @value = task.call()
+            rescue _
+                @value = nil
+            end
+            @mutex.synchronize {
+                @finished = true
+                @condVar.signal
+            }
+        }    
+    end
+
+    def value
+        @mutex.synchronize {
+            while not @finished do
+                @condVar.wait(@mutex)
+            end
+        }
+        @value
+    end
+end
+
+def await (task)
+    task.value
+end
+
+class Array
 private
     def doWork(mapFunc, localReduce, globalReduce)
-        @count = @@threadCount
-        chunkSize = (length / Float(@count)).ceil
-        results = (0...@count).map {
-            |i|
-            Thread.new {
-                start = i * chunkSize
-                finish = if (i + 1) * chunkSize < length then 
-                            (i + 1) * chunkSize 
-                         else 
-                            length 
-                         end
+        mapResults = self.map { |elem| Task.new { mapFunc.call (elem) } }
 
-                localReduce.call ((start...finish).map { |j| mapFunc.call(self[j]) })
-            }
-        }.map { |worker| worker.value }
-        globalReduce.call(results)
+        count = Task.threadCount
+        chunkSize = (length / Float(Task.threadCount)).ceil
+
+        results = mapResults.each_slice(chunkSize)
+            .map { |slice| Task.new { localReduce.call (slice.map { |t| await t }) } }
+            .map { |t| await t }
+
+        globalReduce.call (results)
     end
 
 public
