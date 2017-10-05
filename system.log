@@ -1,0 +1,998 @@
+Sep 28 00:00:46 komissar-osx Yandex.Disk[371]: -[YDSystemStateController checkRestart]
+Sep 28 00:00:46 komissar-osx Yandex.Disk[371]: -[YDOperationCenter performCheckRestartOperation]
+Sep 28 00:00:46 komissar-osx Yandex.Disk[371]: -[YDOperationCenter performCheckRestartOperation] --- appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 00:04:46 komissar-osx Yandex.Disk[371]: -[YDSystemStateController checkRestart]
+Sep 28 00:04:46 komissar-osx Yandex.Disk[371]: -[YDOperationCenter performCheckRestartOperation]
+Sep 28 00:04:46 komissar-osx Yandex.Disk[371]: -[YDOperationCenter performCheckRestartOperation] --- appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 00:05:25 komissar-osx Tunnelblick[2069]: applicationShouldTerminate: termination because of shutdown; delayed until 'shutdownTunnelblick' finishes
+Sep 28 00:05:25 komissar-osx Tunnelblick[2069]: Finished shutting down Tunnelblick; allowing termination
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YDSystemStateController machineWillPowerOff]
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YDOperationCenter performStopForSystemShutDownOperation]
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YDOperationCenter operationQueueBecameBusy:] --- queue <YASerialOperationQueue: 0x600000037500>
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YDStateController operationCenterBeginExclusiveOperations]
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YDAppDelegate applicationShouldTerminate:] --- sender <NSApplication: 0x608000101f80>
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YACrashHandler disable]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.noticeboard.agent[425]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.ViewBridgeAuxiliary[492]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.cloudphotosd[349]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.lateragent[523]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.imklaunchagent[415]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.AirPlayUIAgent[423]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.wifi.WiFiAgent[427]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.FolderActionsDispatcher[406]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 00:05:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.iTunesHelper.1620[364]): Service exited with abnormal code: 1
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YDStateController updateStates] --- self.appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=YES SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 00:05:25 komissar-osx Yandex.Disk[371]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 00:05:25 komissar-osx loginwindow[95]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 00:05:26 komissar-osx sessionlogoutd[2697]: DEAD_PROCESS: 95 console
+Sep 28 00:05:26 komissar-osx shutdown[2699]: SHUTDOWN_TIME: 1506531926 134541
+Sep 28 00:05:26 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): System shutdown initiated by: shutdown.2699<-sessionlogoutd.2697<-launchd.1
+Sep 28 11:09:06 localhost bootlog[0]: BOOT_TIME 1506571746 0
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.AccountPolicyHelper" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/asl" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/system.log" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.authd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.callhistory.asl.conf" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.cdscheduler" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.clouddocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsUICore" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.coreaudio" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.CoreDuetAdmissionControl" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.eventmonitor" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.family.asl" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.icloud.fmfd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 --- last message repeated 2 times ---
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.install" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.iokit.power" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.mail" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.MessageTracer" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.mkb" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.mkb.internal" sharing output destination "/private/var/log/keybagd.log" with ASL Module "com.apple.mkb".
+	Output parameters from ASL Module "com.apple.mkb" override any specified in ASL Module "com.apple.mkb.internal".
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.networking.symptoms" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 --- last message repeated 2 times ---
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.performance" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.secinitd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.AirPlayXPCHelper): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:07 --- last message repeated 2 times ---
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.alf): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:07 localhost syslogd[33]: ASL Sender Statistics
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:07 --- last message repeated 1 time ---
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.auditd): The TimeOut key is no longer respected. It never did anything anyway.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.autofsd): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.backupd-status): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:07 localhost com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.0): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:07 --- last message repeated 10 times ---
+Sep 28 11:09:07 localhost xpcproxy[83]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:07 localhost xpcproxy[99]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:07 localhost xpcproxy[103]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:07 localhost xpcproxy[67]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:08 localhost com.apple.apsd[80]: = mps_limit 0
+Sep 28 11:09:08 komissar-osx com.apple.xpc.launchd[1] (com.apple.appkit.xpc.sandboxedServiceRunner): The JoinExistingSession key is only available to Application services.
+Sep 28 11:09:08 komissar-osx xpcproxy[141]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:08 komissar-osx com.apple.xpc.launchd[1] (com.apple.CoreRAID[39]): Endpoint has been activated through legacy launch(3) APIs. Please switch to XPC or bootstrap_check_in(): com.apple.CoreRAID
+Sep 28 11:09:09 komissar-osx WindowServer[152]: 0.001 [DFR] [DFRDisplayRegisterForNotification] 
+Sep 28 11:09:09 komissar-osx WindowServer[152]: 0.001 [DFR] [DFRDisplayRegisterForNotification] create notification port 0x7f80e4518710
+Sep 28 11:09:09 komissar-osx WindowServer[152]: 0.001 [DFR] [DFRDisplayRegisterForNotification] add runloop source 0x7f80e45188d0 to runloop 0x7f80e470f6a0
+Sep 28 11:09:09 komissar-osx WindowServer[152]: 0.001 [DFR] [__DFRDisplayRegisterForNotification_block_invoke] AddMatchingNotification ret = 0x0
+Sep 28 11:09:09 komissar-osx WindowServer[152]: 0.002 [DFR] [deviceMatch] 
+Sep 28 11:09:09 komissar-osx WindowServer[152]: 0.002 [DFR] [__DFRDisplayRegisterForNotification_block_invoke] AddTerminatedNotification ret = 0x0
+Sep 28 11:09:09 komissar-osx WindowServer[152]: 0.002 [DFR] [deviceTerminate] 
+Sep 28 11:09:09 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): Service "com.apple.ManagedClient.startup" tried to hijack endpoint "com.apple.ManagedClient.agent" from owner: com.apple.ManagedClient
+Sep 28 11:09:09 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.89): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:09 --- last message repeated 10 times ---
+Sep 28 11:09:09 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.212): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:10 --- last message repeated 10 times ---
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.AssistiveControl.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.loginwindow.95.4294967295): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.coreservices.useractivityd): Unknown key for Boolean: DrainMessagesAfterFailedInit
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.coreservices.UASharedPasteboardProgressUI): Unknown key for Boolean: DrainMessagesAfterFailedInit
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.loginwindow.95.4294967295): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.DwellControl.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.loginwindow.95.4294967295): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.imklaunchagent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.loginwindow.95.4294967295): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:10 --- last message repeated 1 time ---
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.loginwindow.95.4294967295): com.apple.noticeboard.agent: EnablePressuredExit is not compatible with KeepAlive=true. Ignoring EnablePressuredExit.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.noticeboard.agent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.loginwindow.95.4294967295): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:10 --- last message repeated 3 times ---
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.inputswitcher.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.loginwindow.95.4294967295): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.universalaccesscontrol.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.universalaccessd.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.UserEventAgent-LoginWindow): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.VoiceOver.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.ZoomWindow.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.appkit.xpc.sandboxedServiceRunner): The JoinExistingSession key is only available to Application services.
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.202): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:11 --- last message repeated 10 times ---
+Sep 28 11:09:10 komissar-osx com.apple.xpc.launchd[1] (com.apple.appkit.xpc.sandboxedServiceRunner): The JoinExistingSession key is only available to Application services.
+Sep 28 11:09:10 komissar-osx xpcproxy[216]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:11 komissar-osx xpcproxy[217]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.system): Service tried to register a port for an endpoint declared in its launchd.plist(5): service = com.apple.ManagedClient, endpoint = com.apple.mcxd
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/PrivateFrameworks/FamilyControls.framework/Versions/A/XPCServices/com.apple.FCiCloudPrefUpdater.xpc/Contents/MacOS/com.apple.FCiCloudPrefUpdater error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/SandboxedServiceRunner.xpc/Contents/MacOS/SandboxedServiceRunner error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/XPCTimeStampingService.xpc/Contents/MacOS/XPCTimeStampingService error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/XPCServices/com.apple.DictionaryServiceHelper.xpc/Contents/MacOS/com.apple.DictionaryServiceHelper error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc/Contents/MacOS/com.apple.hiservices-xpcservice error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/XPCKeychainSandboxCheck.xpc/Contents/MacOS/XPCKeychainSandboxCheck error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/Frameworks/IOKit.framework/Versions/A/XPCServices/IOServiceAuthorizeAgent.xpc/Contents/MacOS/IOServiceAuthorizeAgent error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Path not allowed in target domain: type = uid, path = /System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/Versions/A/XPCServices/com.apple.SpeechRecognitionCore.brokerd.xpc/Contents/MacOS/com.apple.SpeechRecognitionCore.brokerd error = 1: Operation not permitted, origin = /System/Library/Frameworks/Security.framework/Versions/A/MachServices/SecurityAgent.bundle
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Failed to bootstrap path: path = /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/XPCTimeStampingService.xpc, error = 1: Operation not permitted
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Failed to bootstrap path: path = /System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/Versions/A/XPCServices/com.apple.SpeechRecognitionCore.brokerd.xpc, error = 1: Operation not permitted
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Failed to bootstrap path: path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc, error = 1: Operation not permitted
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Failed to bootstrap path: path = /System/Library/Frameworks/AppKit.framework/Versions/C/XPCServices/SandboxedServiceRunner.xpc, error = 1: Operation not permitted
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Failed to bootstrap path: path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/XPCServices/com.apple.DictionaryServiceHelper.xpc, error = 1: Operation not permitted
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Failed to bootstrap path: path = /System/Library/Frameworks/IOKit.framework/Versions/A/XPCServices/IOServiceAuthorizeAgent.xpc, error = 1: Operation not permitted
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.SecurityAgent.193): Failed to bootstrap path: path = /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/XPCKeychainSandboxCheck.xpc, error = 1: Operation not permitted
+Sep 28 11:09:11 komissar-osx com.apple.xpc.launchd[1] (com.apple.ReportCrash.Root[243]): Endpoint has been activated through legacy launch(3) APIs. Please switch to XPC or bootstrap_check_in(): com.apple.ReportCrash.DirectoryService
+Sep 28 11:09:12 komissar-osx revisiond[94]: BUG in libdispatch: 16G29 - 3804 - 0x4
+Sep 28 11:09:12 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:14 komissar-osx xpcproxy[278]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:09:17 komissar-osx loginwindow[95]: USER_PROCESS: 95 console
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.1188810684): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 --- last message repeated 10 times ---
+Sep 28 11:09:17 komissar-osx launchd[1]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:09:17 komissar-osx UserEventAgent[34]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): com.apple.AirPlayUIAgent: EnablePressuredExit is not compatible with KeepAlive=true. Ignoring EnablePressuredExit.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.AirPlayUIAgent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 2 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.AssistiveControl.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.videoconference.camera): The UserName key is not supported for non-System services.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 8 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.coreservices.useractivityd): Unknown key for Boolean: DrainMessagesAfterFailedInit
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.coreservices.UASharedPasteboardProgressUI): Unknown key for Boolean: DrainMessagesAfterFailedInit
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 1 time ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.diagnostics_agent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dock.fullscreen): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dock.server): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dock.notificationcenter): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dock.appstore): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dock.remotedesktoppicture): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dock.launchpad): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dock.downloads): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.DwellControl.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 4 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.gamed): The ServiceIPC key is no longer respected. Please remove it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 1 time ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.icdd): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 2 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.imklaunchagent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 4 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.midiserver.io): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): com.apple.noticeboard.agent: EnablePressuredExit is not compatible with KeepAlive=true. Ignoring EnablePressuredExit.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.noticeboard.agent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.notificationcenterui.alerts): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.notificationcenterui.customalerts): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.notificationcenterui.extension-trampoline): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.notificationcenterui.tcc): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.notificationcenterui.agent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 3 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.passd): Unknown key for string: com.apple.application-identifier
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 1 time ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Caller tried to hijack service: path = /System/Library/LaunchAgents/com.apple.pluginkit.pkd.plist, caller = loginwindow.95
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 2 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.PubSub.Agent): The ServiceIPC key is no longer respected. Please remove it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 3 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.quicklook.ui.helper.active): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 2 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.ReportCrash): The DrainMessagesOnCrash key is not yet implemented. If you rely on this key, please file a bug.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.ReportCrash.Self): The DrainMessagesOnCrash key is not yet implemented. If you rely on this key, please file a bug.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 3 times ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.sharingd): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.soagent): Invalid type for event (event/type): events/array
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.soagent): Invalid type for event (event/type): bundleid/string
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 1 time ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Caller tried to hijack service: path = /System/Library/LaunchAgents/com.apple.storeinstallagent.plist, caller = loginwindow.95
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:18 --- last message repeated 1 time ---
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.systemuiserver.ServiceProvider): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dockextra.server): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.SUISMessaging): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.ipodserver): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.systemuiserver.screencapture): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.tsm.uiserver): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.dockling.server): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.inputswitcher.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Caller tried to hijack service: path = /System/Library/LaunchAgents/com.apple.trustd.agent.plist, caller = loginwindow.95
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.universalaccesscontrol.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.universalaccessd.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.UserEventAgent-Aqua): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.usernoted): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.videosubscriptionsd): The UserName key is not supported for non-System services.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.VoiceOver.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.apple.ZoomWindow.running): The HideUntilCheckIn property is an architectural performance issue. Please transition away from it.
+Sep 28 11:09:17 komissar-osx com.apple.xpc.launchd[1] (com.jamfsoftware.jamf.agent): This service is defined to be constantly running and is inherently inefficient.
+Sep 28 11:09:18 komissar-osx CommCenter[322]: objc[322]: Class CTAsciiAddress is implemented in both /System/Library/Frameworks/CoreTelephony.framework/Versions/A/CoreTelephony (0x7fffcd8c3848) and /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter (0x1068515f8). One of the two will be used. Which one is undefined.
+Sep 28 11:09:18 komissar-osx CommCenter[322]: objc[322]: Class CTPhoneNumber is implemented in both /System/Library/Frameworks/CoreTelephony.framework/Versions/A/CoreTelephony (0x7fffcd8c38e8) and /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter (0x106851788). One of the two will be used. Which one is undefined.
+Sep 28 11:09:18 komissar-osx com.apple.xpc.launchd[1] (com.valvesoftware.steamclean): Unknown key for array: SteamContentPaths
+Sep 28 11:09:18 komissar-osx com.apple.xpc.launchd[1] (net.tunnelblick.tunnelblick.LaunchAtLogin): This key does not do anything: OnDemand
+Sep 28 11:09:18 komissar-osx com.apple.xpc.launchd[1] (com.apple.appkit.xpc.sandboxedServiceRunner): The JoinExistingSession key is only available to Application services.
+Sep 28 11:09:18 komissar-osx hidd[99]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:09:18 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:19 --- last message repeated 2 times ---
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.55): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:19 --- last message repeated 10 times ---
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imtranscoding.IMTranscoderAgent): Unknown key for integer: _DirtyJetsamPriority
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imtranscoding.IMTranscoderAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imdmessageservices.IMDMessageServicesAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Networking.96ACF95B-0485-49DD-89D7-0319A45C4494[364]): Service exited with abnormal code: 1
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Could not import service from caller: caller = otherbsd.318, service = ru.yandex.desktop.disk.launcher, error = 119: Service is disabled
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:20 --- last message repeated 1 time ---
+Sep 28 11:09:19 komissar-osx networkserviceproxy[382]: objc[382]: Class NSPFlowDivert is implemented in both /System/Library/PrivateFrameworks/NetworkServiceProxy.framework/Versions/A/NetworkServiceProxy (0x103a1a388) and /usr/libexec/networkserviceproxy (0x10393aa10). One of the two will be used. Which one is undefined.
+Sep 28 11:09:19 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:20 komissar-osx AssetCache[345]: BUG in libdispatch: 16G29 - 3804 - 0x4
+Sep 28 11:09:20 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.235): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:20 --- last message repeated 10 times ---
+Sep 28 11:09:20 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:20 komissar-osx Finder[329]: assertion failed: 16G29: libxpc.dylib + 74307 [BF896DF0-D8E9-31A8-A4B3-01120BFEEE52]: 0x89
+Sep 28 11:09:20 komissar-osx SystemUIServer[328]: objc[328]: Class TIMLog is implemented in both /System/Library/CoreServices/Menu Extras/TextInput.menu/Contents/SharedFrameworks/TextInputUI.framework/Versions/A/TextInputUI (0x104e88858) and /System/Library/CoreServices/Menu Extras/TextInput.menu/Contents/MacOS/TextInput (0x104e646c8). One of the two will be used. Which one is undefined.
+Sep 28 11:09:20 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:20 komissar-osx pbs[408]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:09:22 komissar-osx mapspushd[465]: objc[465]: Class MSPUserRoutingPreferences is implemented in both /System/Library/PrivateFrameworks/MapsSupport.framework/Versions/A/MapsSupport (0x7fffcfbd7410) and /System/Library/CoreServices/mapspushd (0x10c658918). One of the two will be used. Which one is undefined.
+Sep 28 11:09:22 komissar-osx akd[471]: objc[471]: Class AKToken is implemented in both /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/AuthKit (0x7fffce914338) and /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd (0x105dd26b8). One of the two will be used. Which one is undefined.
+Sep 28 11:09:22 komissar-osx akd[471]: objc[471]: Class AKMasterToken is implemented in both /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/AuthKit (0x7fffce914388) and /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd (0x105dd2708). One of the two will be used. Which one is undefined.
+Sep 28 11:09:22 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:23 --- last message repeated 4 times ---
+Sep 28 11:09:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.quicklook[479]): Endpoint has been activated through legacy launch(3) APIs. Please switch to XPC or bootstrap_check_in(): com.apple.quicklook
+Sep 28 11:09:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: -[YDUserDefaults loadSettings] --- source system
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: =================================== Running Yandex.Disk 1.4.17 (6136) ===================================
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationDidFinishLaunching:] --- NSAppKitVersionNumber 1504.830000
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationDidFinishLaunching:] --- localizations (
+	    en,
+	    ru,
+	    tr,
+	    uk
+	)
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationDidFinishLaunching:] --- preferredLocalizations (
+	    ru
+	)
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationDidFinishLaunching:] --- appVersion mac
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationDidFinishLaunching:] --- launchedAfterCrash 0
+Sep 28 11:09:23 komissar-osx Yandex.Disk[463]: -[YACrashHandler enable]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveArguments] --- appJustInstalled 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserUID] --- self.appConfiguration.syncDirectory (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSyncDirectoryURL]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSyncDirectoryURL] --- directoryURL file:///.file/id=6571367.1222999/, data.length 860, syncDirectoryURL file:///.file/id=6571367.1222999/, isStale 0, error (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- dirInTrash 0, syncDirPath /Users/komissar/Yandex.Disk.localized, syncDirectoryURL file:///.file/id=6571367.1222999/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserNickName]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readIsB2B]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:24 --- last message repeated 2 times ---
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readAuthToken] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- userUID 383859541
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- lastVersion 1.4.17.6136, startAfterTokenRecovery 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- status 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readServiceType]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUseSocialAuthorization]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSyncDisabled]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readAutostartBySystem]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItems]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed] --- result 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readAutostartBySystemDidChangeByUser]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSendAutoReports]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUpdateAutomatically]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readQuitWithoutUserConsent]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readNeedsShowSetup]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readNeedsShowSetup] --- result 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readImportedResouceList] --- self.appConfiguration.syncDirectory file:///.file/id=6571367.1222999/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readInstallationIDKey]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readStartNotAllowed]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSkippedFolders]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSkippedFoldersLastSyncedRevision]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readPhotoStreamUpload] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readPhotoStreamUploadDevices]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readLicenceDone]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsUploadWindowDone] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsPublic] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsPublicCount] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsDisabled]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotFormat]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotNameType]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readDefaultAuthToken]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- userUID default
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- finding item error: Не удается найти указанный объект в Связке ключей. (-25300)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readLogoutInfo]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readLocalSpaceLimits] --- enabled 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShowDiskNews]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readIsB2B]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readRecentNewsNumber]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readNewsExpireDate]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShouldShowNews]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShouldShowNewsBalloon]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShouldAnnounceNews]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.loginURL https://oauth.yandex.ru/authorize?response_type=code&client_id=197f6527da4b48a4bde884cd03fca56f&display=popup&disable_social_auth, configuration.serviceStorageURL https://webdav.yandex.ru/, configuration.serviceUserInfoURL https://webdav.yandex.ru/?userinfo, configuration.diskStorageURL https://webdav.yandex.ru/disk, configuration.proxySettings (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.syncDirectory file:///.file/id=6571367.1222999/, configuration.userUID 383859541, configuration.userNickName komissarov.allex, configuration.userFullName (null), configuration.isB2B 0, configuration.installationID 6148029909130131842, configuration.importedResources.count 0, configuration.distribution (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.syncDisabled 0, configuration.autostartBySystem 1, configuration.photoStreamUpload 1, configuration.updateAutomatically 1, configuration.sendAutoReports 1, configuration.serviceType 0, configuration.useSocialAuthorization 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.updateGroup 9357, configuration.headGroup 8686
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.screenshotsDisabled 0, configuration.systemScreenhotSettings 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.showSharedFoldersNotifications 1, configuration.showLikeNotifications 1, configuration.showCommentNotifications 1, configuration.showAutouploadNotifications 1, configuration.showUnknownNotifications 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDStateController enable]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAccountInfoController enable]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- directoryURL file:///.file/id=6571367.1222999/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- directoryAttributes {
+	    NSURLIsAliasFileKey = 0;
+	    NSURLIsDirectoryKey = 1;
+	    NSURLIsHiddenKey = 0;
+	    NSURLIsPackageKey = 0;
+	    NSURLIsSymbolicLinkKey = 0;
+	    NSURLIsUserImmutableKey = 0;
+	    NSURLIsVolumeKey = 0;
+	    NSURLVolumeURLKey = "file:///.file/id=6571367.2/";
+	}
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1, directoryVolumeURL file:///.file/id=6571367.2/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:24 --- last message repeated 1 time ---
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- isRemovable 0, isWritable 1, isUnmountable 0, suitable 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- userDirectory /Users/komissar
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- userDirectoryURL file:///Users/komissar/, userDirectoryVolumeURL file:///, directoryPath /Users/komissar/Yandex.Disk.localized, directoryVolumeURL file:///.file/id=6571367.2/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDFavouritesListObserver observeFavoritesList:] --- found 0, suitable 1, needsUpdate 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDFileDragAndDropController allowCopyImmedately]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performSendInstallationNotificationOperation]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameBusy:] --- queue <YAConcurentOperationQueue: 0x608000229600>
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSendInstallationNotificationTask start]
+Sep 28 11:09:24 --- last message repeated 1 time ---
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSendInstallationNotificationTask start] --- newIDHash 6148029909130131842, self.appConfiguration.isInstallationIDFresh 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSendInstallationNotificationTask finish]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSendInstallationNotificationTask reset]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameIdle:] --- queue <YAConcurentOperationQueue: 0x608000229600>
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performStartupOperation]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameBusy:] --- queue <YASerialOperationQueue: 0x6080002296a0>
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDStateController operationCenterBeginExclusiveOperations]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAStatisticsController beginSendingStatistics]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAStatisticsController sendJustInstalledStatistics]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAStatisticsSender sendStatisticsOfType:forProductName:UUID:productVersion:OSVersion:clientID:] --- statisticsURL http://soft.export.yandex.ru/status.xml?yasoft=yadisk&ui=96881553-FE9E-4DB4-8EC9-36A5B48359E1&ver=1.4.17.6136&os=macosx&osver=10.12.6&stat=install&clid=1867468
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YATelemetryController enable]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YATelemetryController sendTelemetry]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performAutomaticUpdateOperation]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameBusy:] --- queue <YAConcurentOperationQueue: 0x608000229600>
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YASelectorTask start]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAUpdateController checkForUpdates:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAUpdateController isBundleUpdateable] --- bundleAttributes {
+	    NSURLVolumeURLKey = "file:///";
+	}, userDirectoryAttributes {
+	    NSURLVolumeURLKey = "file:///";
+	}
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAUpdateController isBundleUpdateable] --- bundleURL file:///Applications/Yandex.Disk.app/, bundleVolumeURL file:///, userDirectoryURL file:///Users/komissar/, userDirectoryVolumeURL file:///
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAUpdateController isBundleUpdateable] --- updateable 1
+Sep 28 11:09:24 --- last message repeated 1 time ---
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YASelectorTask finish]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YASelectorTask reset]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameIdle:] --- queue <YAConcurentOperationQueue: 0x608000229600>
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationDidFinishLaunching:] --- serialNumber C02MJ45VF6T6, hardwareModel MacBookAir6,2, platformUUID 5b4f11df1f27cdc2405be6fbf2378eb44919cf86, OSVersion mac 10.12.6
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed] --- result 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager migrateSettings] --- isAutostart 0, isAutostartNotSandboxed 1, isSandboxed 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed] --- result 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager migrateSettings] --- isAutostart 0, isAutostartNotSandboxed 1, isSandboxed 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YASystemStateManager observeScreenCapture] --- systemScreenCaptureDirectory /Users/komissar/Desktop
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAScreenshotsFileSystemObserver enable] --- self.directoryPath /Users/komissar/Desktop, directoryExist 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setIntegrationWithFinder:] --- integration 0, self.appConfiguration.integrationWithFinder 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationDidFinishLaunching:] --- editor <NSRunningApplication: 0x608000111670 (ru.yandex.desktop.disk.screenshots - 487)>, error (null)
+Sep 28 11:09:24 komissar-osx Editor[487]: -[YDUserDefaults loadSettings] --- source system
+Sep 28 11:09:24 komissar-osx Editor[487]: -[AppDelegate init] --- wasLaunchedByDisk 1, wasLaunchedByUIAgent 0
+Sep 28 11:09:24 komissar-osx Editor[487]: -[AppDelegate applicationWillFinishLaunching:]
+Sep 28 11:09:24 komissar-osx Editor[487]: -[AppDelegate applicationShouldOpenUntitledFile:] --- needWelcome 1, _goToBackground 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAStatisticsSender connection:didFailWithError:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAUpdateController serviceCoreUpdateStatusChange:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAUpdateController serviceCoreUpdateStatusChange:] --- status 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSharingController uploadDelayedFiles] --- uploadedFiles (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Starting USERINFO=NotReq CORE=Stopped SYNC=Idle EXOP=YES SHROP=NO PROXY=NO PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDTestTokenTask start]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDTestTokenTask start] --- userUID 383859541, valid 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDTestTokenTask finish]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDTestTokenTask reset]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDCheckProxySettingsTask: 0x6080000f4300>
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDCheckProxySettingsTask start]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: +[YASystemInfo(ProxySettings) systemProxySettings] --- settingsDictionary {
+	    ExceptionsList =     (
+	        "*.local",
+	        "169.254/16"
+	    );
+	    FTPPassive = 1;
+	    "__SCOPED__" =     {
+	        en0 =         {
+	            ExceptionsList =             (
+	                "*.local",
+	                "169.254/16"
+	            );
+	            FTPPassive = 1;
+	        };
+	    };
+	}
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: +[YASystemInfo(ProxySettings) systemProxySettings] --- protocol socks, proxyEnabled 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: +[YASystemInfo(ProxySettings) systemProxySettings] --- protocol https, proxyEnabled 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDProxySettingsChecker checkCurrent] --- current_ 0
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setProxySettings:] --- proxySettings (null), self.appConfiguration.proxySettings (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDStateController appConfigurationChange]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YATelemetryController sendTelemetry]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- directoryURL file:///.file/id=6571367.1222999/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- directoryAttributes {
+	    NSURLIsAliasFileKey = 0;
+	    NSURLIsDirectoryKey = 1;
+	    NSURLIsHiddenKey = 0;
+	    NSURLIsPackageKey = 0;
+	    NSURLIsSymbolicLinkKey = 0;
+	    NSURLIsUserImmutableKey = 0;
+	    NSURLIsVolumeKey = 0;
+	    NSURLVolumeURLKey = "file:///.file/id=6571367.2/";
+	}
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1, directoryVolumeURL file:///.file/id=6571367.2/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:24 --- last message repeated 1 time ---
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- isRemovable 0, isWritable 1, isUnmountable 0, suitable 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- userDirectory /Users/komissar
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- userDirectoryURL file:///Users/komissar/, userDirectoryVolumeURL file:///, directoryPath /Users/komissar/Yandex.Disk.localized, directoryVolumeURL file:///.file/id=6571367.2/
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDProxySettingsChecker checkCurrent] --- proxySettings <null>
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDDiskCore setAuthToken:] --- 
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDCoreController configureCore] --- self.appConfiguration.serviceStorageURL https://webdav.yandex.ru/, self.appConfiguration.proxySettings (null), [NSBundle mainBundle].fullVersion 1.4.17.6136
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDDiskCore setProxySettings:] --- proxySettings (null)
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDCoreController configureCoreWithUserInfo:]
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDDiskCore setUserAgentVersionNumberString:] --- versionString 1.4.17.6136
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDDiskCore setRootURL:] --- newRootURL https://webdav.yandex.ru/disk
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Starting USERINFO=NotReq CORE=Stopped SYNC=Idle EXOP=YES SHROP=NO PROXY=NO PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:24 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:26 komissar-osx findmydeviced[409]: objc[409]: Class FMDPrivateUtil is implemented in both /System/Library/PrivateFrameworks/FindMyDevice.framework/Versions/A/FindMyDevice (0x7fffcf4bb2d0) and /usr/libexec/findmydeviced (0x10c9d9c70). One of the two will be used. Which one is undefined.
+Sep 28 11:09:26 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:27 --- last message repeated 1 time ---
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDStateController serviceCoreReceiveUserInfo]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDProxySettingsChecker processNotification:] --- notification NSConcreteNotification 0x608000055f00 {name = YAServiceCoreReceiveUserInfoNotification; object = <YDDiskCore: 0x60000008b220>; userInfo = {
+	    YAServiceCoreCountryNotificationKey = ru;
+	    YAServiceCoreFullNameNotificationKey = "\U0410\U043b\U0435\U043a\U0441\U0430\U043d\U0434\U0440 \U041a\U043e\U043c\U0438\U0441\U0441\U0430\U0440\U043e\U0432";
+	    YAServiceCoreIsB2BNotificationKey = 0;
+	    YAServiceCoreNickNameNotificationKey = "komissarov.allex";
+	    YAServiceCoreUserPrefixNotificationKey = "";
+	    YAServiceCoreUserUIDNotificationKey = 383859541;
+	}}
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDProxySettingsChecker checkSuccess]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDCheckProxySettingsTask finish]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: {
+	    "desktop_installed" = 1;
+	    "first_file" = 1;
+	    "mobile_installed" = 1;
+	    "webdav_used" = 1;
+	}
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Starting USERINFO=Received CORE=Stopped SYNC=Idle EXOP=YES SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDCheckProxySettingsTask reset]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDSetNetworkEnabledTask: 0x600000277840>
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDSetNetworkEnabledTask start]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDSetNetworkEnabledTask finish]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDSetNetworkEnabledTask reset]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDDiskCore setAuthToken:] --- 
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDAuthTask: 0x6080000dda40>
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDDiskCore setProxySettings:] --- proxySettings (null)
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDAuthTask start]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDDiskCore setUserAgentVersionNumberString:] --- versionString 1.4.17.6136
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDAuthController tryAuth]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDDiskCore setRootURL:] --- newRootURL https://webdav.yandex.ru/disk
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDAuthController tryAuth] --- userUID 383859541, valid 1
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDCoreController configureCoreWithUserInfo:]
+Sep 28 11:09:27 komissar-osx Yandex.Disk[463]: -[YDAuthController getUserInfo]
+Sep 28 11:09:27 komissar-osx Slack[460]: Creating Slack Application
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: virtual void service_controller_events::on_config(bool) --- configBuild 1.4.17.6136
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController serviceCoreReceiveUserInfo]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAuthController serviceCoreReceiveUserInfo:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAuthController serviceCoreReceiveUserInfo:] --- UID 383859541, nickName komissarov.allex, fullName Александр Комиссаров, countryCode ru, isB2B 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAuthTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: {
+	    "desktop_installed" = 1;
+	    "first_file" = 1;
+	    "mobile_installed" = 1;
+	    "webdav_used" = 1;
+	}
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Starting USERINFO=Received CORE=Stopped SYNC=Idle EXOP=YES SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAuthTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDSetUserInfoTask: 0x600000277940>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setUserUID:] --- userUID 383859541, self.appConfiguration.userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask start] --- userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setUserNickName:] --- userNickName komissarov.allex, self.appConfiguration.userNickName komissarov.allex
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask start] --- userNickName komissarov.allex
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController appConfigurationChange]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask start] --- userFullName Александр Комиссаров
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setAuthToken:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveAuthToken] --- self.appConfiguration.userUID 383859541, self.appConfiguration.userNickName komissarov.allex
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager storeToken:forUserWithUID:onService:withLabel:description:] --- userUID 383859541, service https://oauth.yandex.ru/, label komissarov.allex@oauth.yandex.ru
+Sep 28 11:09:28 komissar-osx com.apple.xpc.launchd[1] (com.apple.CoreLocationAgent[501]): Endpoint has been activated through legacy launch(3) APIs. Please switch to XPC or bootstrap_check_in(): com.apple.CoreLocation.agent
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readOldAuthToken]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- userUID old_token
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- finding item error: Не удается найти указанный объект в Связке ключей. (-25300)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController appConfigurationChange]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController clearDefaultAuthToken]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager deleteDataForUserWithUID:onService:] --- userUID default
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager deleteDataForUserWithUID:onService:] --- status -25300
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setUserCountry:] --- countryCode ru, self.appConfiguration.userCountry (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setUserCountry:] --- usedCountryCode ru
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController appConfigurationChange]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask start] --- countryCode ru
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setIsB2B:] --- isB2B 0, self.appConfiguration.isB2B 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask start] --- isB2B 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetUserInfoTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDTestSyncDirectoryTask: 0x60000009ba30>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestSyncDirectoryTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestSyncDirectoryTask start] --- syncDirectoryURL file:///.file/id=6571367.1222999/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- directoryURL file:///.file/id=6571367.1222999/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- directoryAttributes {
+	    NSURLIsAliasFileKey = 0;
+	    NSURLIsDirectoryKey = 1;
+	    NSURLIsHiddenKey = 0;
+	    NSURLIsPackageKey = 0;
+	    NSURLIsSymbolicLinkKey = 0;
+	    NSURLIsUserImmutableKey = 0;
+	    NSURLIsVolumeKey = 0;
+	    NSURLVolumeURLKey = "file:///.file/id=6571367.2/";
+	}
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1, directoryVolumeURL file:///.file/id=6571367.2/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:28 --- last message repeated 1 time ---
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- isRemovable 0, isWritable 1, isUnmountable 0, suitable 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- userDirectory /Users/komissar
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- userDirectoryURL file:///Users/komissar/, userDirectoryVolumeURL file:///, directoryPath /Users/komissar/Yandex.Disk.localized, directoryVolumeURL file:///.file/id=6571367.2/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController isDirectorySuitable:] --- suitable 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestSyncDirectoryTask start] --- syncDirectoryURL file:///.file/id=6571367.1222999/, suitable 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestSyncDirectoryTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestSyncDirectoryTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDTestUserUIDMatchTask: 0x60000009c4d0>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestUserUIDMatchTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[NSFileManager(SyncDirectory) readUserUIDFromDirectory:] --- userUIDFilePath /Users/komissar/Yandex.Disk.localized/.sync/~uid, fileExists 1, isDirectory 0, userUID 383859541, error (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestUserUIDMatchTask start] --- syncDirectoryURL file:///.file/id=6571367.1222999/, storedUserUID 383859541, receivedUserUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestUserUIDMatchTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDTestUserUIDMatchTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDCheckNeedsUpdateSharedFavouriteListItemTask: 0x600000277440>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDCheckNeedsUpdateSharedFavouriteListItemTask start]
+Sep 28 11:09:28 --- last message repeated 1 time ---
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDCheckNeedsUpdateSharedFavouriteListItemTask start] --- result 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDCheckNeedsUpdateSharedFavouriteListItemTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDCheckNeedsUpdateSharedFavouriteListItemTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDSaveUserUIDToSyncDirectoryTask: 0x600000248160>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSaveUserUIDToSyncDirectoryTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveUserUIDToDirectory:] --- self.appConfiguration.userUID 383859541, syncDirectoryExists 1, directory file:///.file/id=6571367.1222999/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveUserUIDToDirectory:] --- workingDirectoryURL file:///Users/komissar/Yandex.Disk.localized/.sync/, success 1, error (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveUserUIDToDirectory:] --- userUIDFileURL file:///Users/komissar/Yandex.Disk.localized/.sync/~uid, success 1, error (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSaveUserUIDToSyncDirectoryTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSaveUserUIDToSyncDirectoryTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDReloadAppConfigurationTask: 0x600000247f80>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDReloadAppConfigurationTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserUID] --- self.appConfiguration.syncDirectory file:///.file/id=6571367.1222999/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSyncDirectoryURL]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSyncDirectoryURL] --- directoryURL file:///.file/id=6571367.1222999/, data.length 860, syncDirectoryURL file:///.file/id=6571367.1222999/, isStale 0, error (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- dirInTrash 0, syncDirPath /Users/komissar/Yandex.Disk.localized, syncDirectoryURL file:///.file/id=6571367.1222999/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserNickName]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readIsB2B]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:28 --- last message repeated 2 times ---
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readAuthToken] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- lastVersion 1.4.17.6136, startAfterTokenRecovery 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- status 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readServiceType]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUseSocialAuthorization]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSyncDisabled]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readAutostartBySystem]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItems]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDLaunchServicesManager isAppInSessionStartupItemsNotSandboxed] --- result 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readAutostartBySystemDidChangeByUser]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSendAutoReports]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUpdateAutomatically]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readQuitWithoutUserConsent]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readNeedsShowSetup]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readNeedsShowSetup] --- result 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readImportedResouceList] --- self.appConfiguration.syncDirectory file:///.file/id=6571367.1222999/
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readInstallationIDKey]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readStartNotAllowed]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSkippedFolders]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readSkippedFoldersLastSyncedRevision]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readPhotoStreamUpload] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readPhotoStreamUploadDevices]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readLicenceDone]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsUploadWindowDone] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsPublic] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsPublicCount] --- self.appConfiguration.userUID 383859541
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotsDisabled]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotFormat]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readScreenshotNameType]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readDefaultAuthToken]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- userUID default
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- finding item error: Не удается найти указанный объект в Связке ключей. (-25300)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readLogoutInfo]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readLocalSpaceLimits] --- enabled 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShowDiskNews]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readIsB2B]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readRecentNewsNumber]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readNewsExpireDate]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShouldShowNews]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShouldShowNewsBalloon]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readShouldAnnounceNews]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.loginURL https://oauth.yandex.ru/authorize?response_type=code&client_id=197f6527da4b48a4bde884cd03fca56f&display=popup&disable_social_auth, configuration.serviceStorageURL https://webdav.yandex.ru/, configuration.serviceUserInfoURL https://webdav.yandex.ru/?userinfo, configuration.diskStorageURL https://webdav.yandex.ru/disk, configuration.proxySettings (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.syncDirectory file:///.file/id=6571367.1222999/, configuration.userUID 383859541, configuration.userNickName komissarov.allex, configuration.userFullName Александр Комиссаров, configuration.isB2B 0, configuration.installationID 6148029909130131842, configuration.importedResources.count 0, configuration.distribution (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.syncDisabled 0, configuration.autostartBySystem 1, configuration.photoStreamUpload 1, configuration.updateAutomatically 1, configuration.sendAutoReports 1, configuration.serviceType 0, configuration.useSocialAuthorization 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.updateGroup 9357, configuration.headGroup 8686
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.screenshotsDisabled 0, configuration.systemScreenhotSettings 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController loadConfiguration] --- configuration.showSharedFoldersNotifications 1, configuration.showLikeNotifications 1, configuration.showCommentNotifications 1, configuration.showAutouploadNotifications 1, configuration.showUnknownNotifications 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController appConfigurationChange]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDReloadAppConfigurationTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDReloadAppConfigurationTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDConfigureCoresTask: 0x600000248850>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDDiskCore setAuthToken:] --- 
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDConfigureCoresTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDDiskCore setProxySettings:] --- proxySettings (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDCoreController configureCore] --- self.appConfiguration.serviceStorageURL https://webdav.yandex.ru/, self.appConfiguration.proxySettings (null), [NSBundle mainBundle].fullVersion 1.4.17.6136
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDDiskCore setUserAgentVersionNumberString:] --- versionString 1.4.17.6136
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDCoreController configureCoreWithUserInfo:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDDiskCore setRootURL:] --- newRootURL https://webdav.yandex.ru/disk
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDConfigureCoresTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDConfigureCoresTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDSetSpeedLimitTask: 0x600000277140>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetSpeedLimitTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetSpeedLimitTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSetSpeedLimitTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDUpdateLocalSpaceLimitsTask: 0x600000248670>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDUpdateLocalSpaceLimitsTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDUpdateLocalSpaceLimitsTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDUpdateLocalSpaceLimitsTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDExcludeFoldersTask: 0x600000277640>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDExcludeFoldersTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDExcludeFoldersTask start] --- skippedFolders (
+	    Apps,
+	    Mods
+	)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileManager excludeClear]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileManager excludeAddURL:remove:] --- URLString Apps, needsRemove 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileManager excludeAddURL:remove:] --- URLString Mods, needsRemove 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDExcludeFoldersTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDExcludeFoldersTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDStartCoresTask: 0x6000000f1f00>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStartCoresTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSyncController enable]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileSystemObserver enable] --- self.directoryPath /Users/komissar/Yandex.Disk.localized
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileSystemObserver enable] --- self.directoryPath /Users/komissar/Yandex.Disk.localized, self.latency 1.000000, directoryExist 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileSystemObserver enable] --- directoryDescriptor 25
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileSystemObserver enable] --- queue 27
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDFileSystemObserver enable] --- kernelQueueDescriptor <CFFileDescriptor 0x6080000c8110 [0x7fffcd6d6da0]>{valid = Yes, fd = 1b, source = 0x0, callout = kernelQueueCallback (0x100016b94), context = <CFFileDescriptor context 0x60000007fb40>}
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSystemStateController enable]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDNetworkStatusObserver enable]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDNetworkStatusObserver enable] --- reachabilityRef <SCNetworkReachability 0x10258c330 [0x7fffcd6d6da0]> {default path}
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDNetworkStatusObserver enable] --- storeRef <SCDynamicStore 0x6080001a23e0 [0x7fffcd6d6da0]> {server port = 0xed07, notification delivery not requested (yet)}
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDNetworkStatusObserver enable] --- callbackSet YES
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDNetworkStatusObserver enable] --- scheduled YES
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDPhotoStreamUploadManager enable]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController diskCoreStart]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YANotificationTask processNotification:] --- notification.name YDDiskCoreStartNotification, notification.userInfo (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStartCoresTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setShouldAnnounceNews:] --- shouldAnnounceNews 0, self.appConfiguration.shouldAnnounceNews 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setShouldShowNewsBalloon:] --- shouldShowNewsBalloon 0, self.appConfiguration.shouldShowNewsBalloon 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setShouldShowNews:] --- shouldShowNews 0, self.appConfiguration.shouldShowNews 0
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Starting USERINFO=Received CORE=Paused SYNC=Idle EXOP=YES SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDPhotoStreamUploadManager checkMountedDevices]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDPhotoStreamUploadManager checkMountedDevices] --- isValid 1
+Sep 28 11:09:28 --- last message repeated 2 times ---
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDPhotoStreamUploadManager checkMountedDevices] --- isValid 0
+Sep 28 11:09:28 --- last message repeated 1 time ---
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveUserPreferenceData:forUserUID:key:]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStartCoresTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YDResumeCoresTask: 0x6000000f1d80>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController diskCoreResume]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDResumeCoresTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDResumeCoresTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDResumeCoresTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YABlockTask: 0x600000247d70>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YABlockTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performRevokeTokenOperation]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameBusy:] --- queue <YAConcurentOperationQueue: 0x608000229600>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDRevokeOldTokenTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readOldAuthToken]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- userUID old_token
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDKeychainManager tokenForUserWithUID:onService:] --- finding item error: Не удается найти указанный объект в Связке ключей. (-25300)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YABlockTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YABlockTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YABlockTask: 0x600000248370>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YABlockTask start]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YABlockTask finish]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YABlockTask reset]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask (null)
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameIdle:] --- queue <YASerialOperationQueue: 0x6080002296a0>
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController operationCenterEndExclusiveOperations]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDActivityController enable]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController diskCoreIndexing]
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Indexing USERINFO=Received CORE=Started SYNC=Indexing EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:28 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:30 komissar-osx Slack Helper[499]: objc[499]: Class NotificationCenterDelegate is implemented in both /Applications/Slack.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework (0x1054e2e88) and /Applications/Slack.app/Contents/Resources/app.asar.unpacked/node_modules/node-mac-notifier/build/Release/Notification.node (0x10ac889f8). One of the two will be used. Which one is undefined.
+Sep 28 11:09:30 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:09:32 komissar-osx com.apple.xpc.launchd[1] (com.apple.appkit.xpc.sandboxedServiceRunner): The JoinExistingSession key is only available to Application services.
+Sep 28 11:09:32 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.user.200): Service sets EnableTransactions=false and EnablePressuredExit=true, which makes no sense. Enabling Transactions.
+Sep 28 11:09:33 --- last message repeated 10 times ---
+Sep 28 11:09:33 komissar-osx gamed[472]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:09:35 komissar-osx filecoordinationd[405]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:09:35 komissar-osx ProtectedCloudKeySyncing[517]: objc[517]: Class UserRegistryDB is implemented in both /System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Versions/A/ProtectedCloudStorage (0x7fffd0112848) and /System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Helpers/ProtectedCloudKeySyncing (0x105ca8b60). One of the two will be used. Which one is undefined.
+Sep 28 11:09:36 komissar-osx Yandex.Disk[463]: -[YDStateController diskCoreBusy]
+Sep 28 11:09:36 komissar-osx Yandex.Disk[463]: -[YDSharingController uploadDelayedFiles] --- uploadedFiles (null)
+Sep 28 11:09:36 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Syncing USERINFO=Received CORE=Started SYNC=Syncing EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:36 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDAccountInfoController diskCoreUpdateQuota:] --- used 34628012363, available 244544861877, maxFileSize 10737418240, trashSize 0
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController setDownloadsDirectoryLocalPath:] --- newDirectoryPath Загрузки, self.appConfiguration.downloadsDirectoryLocalPath Загрузки
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveDownloadsDirectoryPath] --- downloadsDirectoryPath /Users/komissar/Yandex.Disk.localized/Загрузки
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveDownloadsDirectoryLocalPath] --- self.appConfiguration.downloadsDirectoryLocalPath Загрузки
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveUserPreferenceData:forUserUID:key:]
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDStateController appConfigurationChange]
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Syncing USERINFO=Received CORE=Started SYNC=Syncing EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:37 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YDActivityController disable]
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YDStateController diskCoreIdle]
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController readUserPreference:forKey:]
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YDAppConfigurationController saveUserPreferenceData:forUserUID:key:]
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YAUpdateController serviceCoreUpdateStatusChange:]
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YAUpdateController serviceCoreUpdateStatusChange:] --- status 8
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:09:44 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YDRevokeOldTokenTask finish]
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YDRevokeOldTokenTask reset]
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask <YANoopTask: 0x600000057820>
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YANoopTask start]
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YANoopTask finish]
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YANoopTask reset]
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YAOperation process] --- newTask (null)
+Sep 28 11:09:58 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameIdle:] --- queue <YAConcurentOperationQueue: 0x608000229600>
+Sep 28 11:10:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:10:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.imtranscoding.IMTranscoderAgent): Unknown key for integer: _DirtyJetsamPriority
+Sep 28 11:10:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.imtranscoding.IMTranscoderAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:10:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.imdmessageservices.IMDMessageServicesAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:10:35 komissar-osx Dock[326]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] add: "No such file or directory" - 0x2
+Sep 28 11:10:35 komissar-osx com.apple.PerformanceAnalysis.animationperfd[229]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:10:40 komissar-osx com.apple.xpc.launchd[1] (com.apple.ctkd[413]): Service exited due to signal: Killed: 9 sent by jamfAgent[435]
+Sep 28 11:11:09 komissar-osx xpcproxy[585]: libcoreservices: _dirhelper_userdir: 523: bootstrap_look_up returned 268435459
+Sep 28 11:11:16 komissar-osx Yandex[584]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.PubSub.Agent[621]): Endpoint has been activated through legacy launch(3) APIs. Please switch to XPC or bootstrap_check_in(): com.apple.pubsub.ipc
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.PubSub.Agent[621]): Endpoint has been activated through legacy launch(3) APIs. Please switch to XPC or bootstrap_check_in(): com.apple.pubsub.notification
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.WebContent.624): Path not allowed in target domain: type = pid, path = /System/Library/StagedFrameworks/Safari/SafariShared.framework/Versions/A/XPCServices/com.apple.Safari.ImageDecoder.xpc/Contents/MacOS/com.apple.Safari.ImageDecoder error = 147: The specified service did not ship in the requestor's bundle, origin = /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.WebContent.624): Path not allowed in target domain: type = pid, path = /System/Library/StagedFrameworks/Safari/SafariShared.framework/Versions/A/XPCServices/com.apple.Safari.SearchHelper.xpc/Contents/MacOS/com.apple.Safari.SearchHelper error = 147: The specified service did not ship in the requestor's bundle, origin = /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.WebContent.628): Path not allowed in target domain: type = pid, path = /System/Library/StagedFrameworks/Safari/SafariShared.framework/Versions/A/XPCServices/com.apple.Safari.ImageDecoder.xpc/Contents/MacOS/com.apple.Safari.ImageDecoder error = 147: The specified service did not ship in the requestor's bundle, origin = /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.WebContent.628): Path not allowed in target domain: type = pid, path = /System/Library/StagedFrameworks/Safari/SafariShared.framework/Versions/A/XPCServices/com.apple.Safari.SearchHelper.xpc/Contents/MacOS/com.apple.Safari.SearchHelper error = 147: The specified service did not ship in the requestor's bundle, origin = /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.WebContent.627): Path not allowed in target domain: type = pid, path = /System/Library/StagedFrameworks/Safari/SafariShared.framework/Versions/A/XPCServices/com.apple.Safari.ImageDecoder.xpc/Contents/MacOS/com.apple.Safari.ImageDecoder error = 147: The specified service did not ship in the requestor's bundle, origin = /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.domain.pid.WebContent.627): Path not allowed in target domain: type = pid, path = /System/Library/StagedFrameworks/Safari/SafariShared.framework/Versions/A/XPCServices/com.apple.Safari.SearchHelper.xpc/Contents/MacOS/com.apple.Safari.SearchHelper error = 147: The specified service did not ship in the requestor's bundle, origin = /System/Library/StagedFrameworks/Safari/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc
+Sep 28 11:11:25 komissar-osx com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+Sep 28 11:11:28 --- last message repeated 1 time ---
+Sep 28 11:11:27 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.32): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:27 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.WebContent): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:11:27 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Plugin.64): Unknown key for Boolean: _HighBitsASLR
+Sep 28 11:12:00 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Networking.36EF1681-50BF-4DE4-9A1D-7268D83E87EE[626]): Service exited with abnormal code: 1
+Sep 28 11:13:23 komissar-osx Yandex.Disk[463]: -[YDSystemStateController checkRestart]
+Sep 28 11:13:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation]
+Sep 28 11:13:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation] --- appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:17:23 komissar-osx Yandex.Disk[463]: -[YDSystemStateController checkRestart]
+Sep 28 11:17:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation]
+Sep 28 11:17:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation] --- appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:17:50 komissar-osx Tunnelblick[657]: Using icon set '3.3.TBMenuIcons' without Retina images
+Sep 28 11:17:50 komissar-osx Tunnelblick[657]: Set program update feedURL to https://tunnelblick.yandex-team.ru/appcast-s.rss
+Sep 28 11:17:59 komissar-osx openvpn[667]: no path for address 0x1062db000
+Sep 28 11:18:10 komissar-osx com.apple.xpc.launchd[1] (net.tunnelblick.openvpn.process-network-changes): Service only ran for 4 seconds. Pushing respawn out by 6 seconds.
+Sep 28 11:19:08 komissar-osx com.apple.xpc.launchd[1] (net.tunnelblick.openvpn.process-network-changes): Service only ran for 1 seconds. Pushing respawn out by 9 seconds.
+Sep 28 11:19:08 komissar-osx syslogd[33]: ASL Sender Statistics
+Sep 28 11:19:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.smb.preferences): Service only ran for 6 seconds. Pushing respawn out by 4 seconds.
+Sep 28 11:19:23 komissar-osx com.apple.xpc.launchd[1] (net.tunnelblick.openvpn.process-network-changes): Service only ran for 6 seconds. Pushing respawn out by 4 seconds.
+Sep 28 11:19:24 komissar-osx Yandex.Disk[463]: -[YAStatisticsSender connection:didFailWithError:]
+Sep 28 11:21:23 komissar-osx Yandex.Disk[463]: -[YDSystemStateController checkRestart]
+Sep 28 11:21:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation]
+Sep 28 11:21:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation] --- appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:24:24 komissar-osx com.apple.xpc.launchd[1] (com.apple.smb.preferences): Service only ran for 6 seconds. Pushing respawn out by 4 seconds.
+Sep 28 11:24:24 komissar-osx com.apple.xpc.launchd[1] (net.tunnelblick.openvpn.process-network-changes): Service only ran for 6 seconds. Pushing respawn out by 4 seconds.
+Sep 28 11:25:23 komissar-osx Yandex.Disk[463]: -[YDSystemStateController checkRestart]
+Sep 28 11:25:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation]
+Sep 28 11:25:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation] --- appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:25:28 komissar-osx com.apple.xpc.launchd[1] (net.tunnelblick.openvpn.process-network-changes): Service only ran for 1 seconds. Pushing respawn out by 9 seconds.
+Sep 28 11:29:23 komissar-osx com.apple.xpc.launchd[1] (com.apple.smb.preferences): Service only ran for 6 seconds. Pushing respawn out by 4 seconds.
+Sep 28 11:29:23 komissar-osx syslogd[33]: ASL Sender Statistics
+Sep 28 11:29:23 komissar-osx com.apple.xpc.launchd[1] (net.tunnelblick.openvpn.process-network-changes): Service only ran for 6 seconds. Pushing respawn out by 4 seconds.
+Sep 28 11:29:23 komissar-osx Yandex.Disk[463]: -[YDSystemStateController checkRestart]
+Sep 28 11:29:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation]
+Sep 28 11:29:23 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performCheckRestartOperation] --- appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=NO SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:29:24 komissar-osx Yandex.Disk[463]: -[YAStatisticsSender connection:didFailWithError:]
+Sep 28 11:30:01 komissar-osx com.apple.xpc.launchd[1] (com.apple.WebKit.Networking.9D58F2A1-C777-4479-AF80-DF7BFF2EC94C[623]): Service exited with abnormal code: 1
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.xpc.launchd.user.domain.1188810684.100006.Aqua): Caller not allowed to perform action: loginwindow.95, action = service removal, code = 150: Operation not permitted while System Integrity Protection is engaged, uid = 0, euid = 1188810684, gid = 593637566, egid = 593637566, asid = 100006
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YDSystemStateController machineWillPowerOff]
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YDOperationCenter performStopForSystemShutDownOperation]
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YDOperationCenter operationQueueBecameBusy:] --- queue <YASerialOperationQueue: 0x6080002296a0>
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YDStateController operationCenterBeginExclusiveOperations]
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YDAppDelegate applicationShouldTerminate:] --- sender <NSApplication: 0x6000001030f0>
+Sep 28 11:30:02 komissar-osx Tunnelblick[657]: applicationShouldTerminate: termination because of shutdown; delayed until 'shutdownTunnelblick' finishes
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YACrashHandler disable]
+Sep 28 11:30:02 komissar-osx Tunnelblick[657]: Finished shutting down Tunnelblick; allowing termination
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.AirPlayUIAgent[445]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.cloudphotosd[342]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.SystemUIServer.agent[328]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.lateragent[516]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.noticeboard.agent[447]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.wifi.WiFiAgent[449]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.imklaunchagent[437]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.FolderActionsDispatcher[429]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.ViewBridgeAuxiliary[493]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.iTunesHelper.1620[456]): Service exited with abnormal code: 1
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.coreservices.uiagent[591]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx com.apple.xpc.launchd[1] (com.apple.hiservices-xpcservice[504]): Service exited due to signal: Killed: 9 sent by loginwindow[95]
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YDStateController updateStates] --- self.appState GLOBAL=Synced USERINFO=Received CORE=Started SYNC=Idle EXOP=YES SHROP=NO PROXY=YES PHSTUP=Idle BLOCK=NO SLEEP=NO NEWS=NO
+Sep 28 11:30:02 komissar-osx Yandex.Disk[463]: -[YDSharingQueueController appStateChange] --- self.appState.tokenIsSet 1
+Sep 28 11:30:02 komissar-osx loginwindow[95]: BUG in libdispatch client: kevent[EVFILT_MACHPORT] monitored resource vanished before the source cancel handler was invoked
+Sep 28 11:30:02 komissar-osx sessionlogoutd[1136]: DEAD_PROCESS: 95 console
+Sep 28 11:30:02 komissar-osx shutdown[1137]: SHUTDOWN_TIME: 1506573002 484508
+Sep 28 11:40:52 localhost bootlog[0]: BOOT_TIME 1506573652 0
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.AccountPolicyHelper" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/asl" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.authd" sharing output destination "/var/log/system.log" with ASL Module "com.apple.asl".
+	Output parameters from ASL Module "com.apple.asl" override any specified in ASL Module "com.apple.authd".
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.authd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.callhistory.asl.conf" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.cdscheduler" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.clouddocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsUICore" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.coreaudio" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.CoreDuetAdmissionControl" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.eventmonitor" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.family.asl" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.icloud.fmfd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Sep 28 11:40:53 --- last message repeated 2 times ---
+Sep 28 11:40:53 localhost syslogd[33]: Configuration Notice:
+	ASL Module "com.apple.install" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
