@@ -5,7 +5,7 @@ open System.Text.RegularExpressions
 
 module SyslogParse = 
     module Patterns = 
-        let year = DateTime.Now.Year;
+        let year = DateTime.Now.Year
         let culture = CultureInfo.InvariantCulture
 
         let monthPattern = 
