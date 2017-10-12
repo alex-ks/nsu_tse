@@ -6,13 +6,19 @@
         (fn [accum current]
             (mapcat
                 (fn [s]
-                    (map 
-                        (fn [c] (str s c))
-                        (filter 
-                            (fn [c] (not= c (last s)))
-                            alphabet)))
-                accum))
+                    (->>
+                        (filter (fn [c] (not= c (last s))) alphabet)
+                        (map (fn [c] (str s c)))
+                    )
+                )
+                accum
+            )
+        )
         (map (fn [c] (.toString c)) alphabet)
-        (take (- n 1) (range))))
+        (take (- n 1) (range))
+    )
+)
 
-(println (task4 '(\a \b \c) 3))
+(println 
+    (task4 '(\a \b \c) 3)
+)
