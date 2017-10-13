@@ -4,28 +4,30 @@
 
 (defn task4
     [alphabet, n]
-    (reduce 
-        (fn [accum current]
-            (mapcat
-                (fn [s]
-                    (->>
-                        (filter 
-                            (fn [c] (not= c (last s))) 
-                            alphabet
+    (nth
+        (iterate 
+            (fn [accum]
+                (mapcat
+                    (fn [s]
+                        (->>
+                            (filter 
+                                (fn [c] (not= c (last s))) 
+                                alphabet
+                            )
+                            (map (fn [c] (str s c)))
                         )
-                        (map (fn [c] (str s c)))
                     )
+                    accum
                 )
-                accum
             )
+            (map (fn [c] (.toString c)) alphabet)
         )
-        (map (fn [c] (.toString c)) alphabet)
-        (take (- n 1) (range))
+        (- n 1)
     )
 )
 
 (println 
-    (task4 '(\a \b \c \d) 1)
+    (task4 '(\a \b \c \d) 2)
 )
 
 (test/deftest task4-test
