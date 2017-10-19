@@ -2,8 +2,7 @@
     (require [clojure.test :as test])    
 )
 
-(defn task4
-    [alphabet, n]
+(defn task4 [alphabet, n]
     (nth
         (iterate 
             (fn [accum]
