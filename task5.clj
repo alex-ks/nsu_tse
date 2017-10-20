@@ -2,38 +2,40 @@
     (require [clojure.test :as test])    
 )
 
-(defn integrateAndCalc [step f x]
-    (->>
-        (take (/ x step) (range))
-        (map (fn [i] (* i step)))
-        (partition 2 1)
-        (map 
-            (fn [pair] 
-                (/ 
-                    (* 
-                        (+ (f (first pair)) (f (last pair))) 
-                        step
-                    ) 
-                2.)
+(defn integrateAndCalc [nextIntegrate step f x]
+    (if (< (- x step) 0)
+        (/ (* (+ (f x) (f 0)) step) 2.)
+        (+
+            (/
+                (*
+                    (+
+                        (f x)
+                        (f (- x step))
+                    )
+                    step
+                )
+                2.0
             )
+            (nextIntegrate nextIntegrate step f (- x step))
         )
-        (reduce +)
-    )    
+    )
 )
 
 (defn integrate [step f] 
-    (def fm (memoize f))
-    (partial integrateAndCalc step fm)
+    (def mI (memoize integrateAndCalc))
+    (partial mI mI step f)
 )
 
 (defn f [x] (* 2 x))
 
-(def fi (integrate 0.001 f))
+(println (integrateAndCalc integrateAndCalc 0.01 f 6))
+
+(def fi (integrate 0.01 f))
 
 (time 
     (->>
-        (take 40 (range))
-        (reverse)
+        (take 10 (range))
+;        (reverse)
         (map fi)
         (reduce +)
     )
