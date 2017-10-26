@@ -2,41 +2,38 @@
     (require [clojure.test :as test])    
 )
 
-(defn integrateAndCalc [nextIntegrate step f x]
-    (if (< (- x step) 0)
-        (/ (* (+ (f x) (f 0)) step) 2.)
-        (+
-            (/
-                (*
-                    (+
-                        (f x)
-                        (f (- x step))
-                    )
-                    step
-                )
-                2.0
+(defn integrateAndCalc [nextIntegrate step gridNth f x]
+    (if (< x step)
+        (/ (* (+ (f x) (f 0)) x) 2.)
+        (let [n (/ x step)
+              prev (gridNth (- n 1))]
+            (+
+                (/ (* (+ (f x) (f prev)) step) 2.)
+                (nextIntegrate nextIntegrate step gridNth f prev)
             )
-            (nextIntegrate nextIntegrate step f (- x step))
         )
     )
 )
 
 (defn integrate [step f] 
+    (def grid (map (fn [x] (* x step)) (range)))
+    (def gridNth (memoize (partial nth grid)))
     (def mI (memoize integrateAndCalc))
-    (partial mI mI step f)
+    (partial mI mI step gridNth f)
 )
 
 (defn f [x] (* 2 x))
 
-(println (integrateAndCalc integrateAndCalc 0.01 f 6))
+(def fi (integrate 0.001 f))
 
-(def fi (integrate 0.01 f))
-
-(time 
-    (->>
-        (take 10 (range))
-;        (reverse)
-        (map fi)
-        (reduce +)
-    )
+; warming-up
+(->>
+    (take 100 (range))
+    (map #(/ % 10.))
+    (map fi)
+    (reduce +)
 )
+
+(println (fi 6))
+
+(time (fi 10))
