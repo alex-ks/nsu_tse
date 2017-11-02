@@ -13,20 +13,27 @@
     )
 )
 
-(defn integralSeries [step f]
-    (let [trapezia (trapeziaSeries step f)]
-        (->>
-            (range)
-            (map 
-                (fn [i] 
-                    (->>
-                        (take i trapezia)
-                        (reduce +)
+(defn calcSeries [seq]
+    (->>
+        (iterate 
+            (fn [pair]
+                (let [sum (first pair)
+                    tail (last pair)]
+                    (list
+                        (+ sum (first tail))
+                        (rest tail)
                     )
                 )
             )
-        )    
+            (list 0 seq)
+        )
+        rest
+        (map (fn [pair] (first pair)))
     )
+)
+
+(defn integralSeries [step f]
+    (calcSeries (trapeziaSeries step f))
 )
 
 (defn getIntegralResult [step f x]
@@ -49,5 +56,5 @@
     (partial getIntegralResult' step f)
 )
 
-(time (getIntegralResult 0.01 (fn [x] (* x 2.)) 9))
-(time (getIntegralResult' 0.01 (fn [x] (* x 2.)) 9))
+(time (getIntegralResult 0.01 (fn [x] (* x 2.)) 20))
+(time (getIntegralResult' 0.01 (fn [x] (* x 2.)) 20))
