@@ -27,7 +27,6 @@
             )
             (list 0 seq)
         )
-        rest
         (map (fn [pair] (first pair)))
     )
 )
@@ -56,5 +55,5 @@
     (partial getIntegralResult' step f)
 )
 
-(time (getIntegralResult 0.01 (fn [x] (* x 2.)) 20))
-(time (getIntegralResult' 0.01 (fn [x] (* x 2.)) 20))
+(println (time (getIntegralResult 0.01 (fn [x] (* x 2.)) 20)))
+(println (time (getIntegralResult' 0.01 (fn [x] (* x 2.)) 20)))
