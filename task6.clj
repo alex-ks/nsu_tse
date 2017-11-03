@@ -18,7 +18,7 @@
         (iterate 
             (fn [pair]
                 (let [sum (first pair)
-                    tail (last pair)]
+                      tail (last pair)]
                     (list
                         (+ sum (first tail))
                         (rest tail)
