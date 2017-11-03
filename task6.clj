@@ -2,7 +2,7 @@
     (require [clojure.test :as test])
 )
 
-(defn trapeziaSeries [step f]
+(defn trapeziaSequence [step f]
     (->>
         (range)
         (map (fn [i] (* i step)))
@@ -32,28 +32,13 @@
 )
 
 (defn integralSeries [step f]
-    (calcSeries (trapeziaSeries step f))
-)
-
-(defn getIntegralResult [step f x]
-    (->> 
-        (trapeziaSeries step f)
-        (take (/ x step))
-        (reduce +)
-    )
+    (calcSeries (trapeziaSequence step f))
 )
 
 (defn integrate [step f]
-    (partial getIntegralResult step f)
+    (fn [x] (nth (integralSeries step f) (/ x step)))
 )
 
-(defn getIntegralResult' [step f x]
-    (nth (integralSeries step f) (/ x step))
-)
+(def square (integrate 0.01 (fn [x] (* x 2.))))
 
-(defn integrate' [step f]
-    (partial getIntegralResult' step f)
-)
-
-(println (time (getIntegralResult 0.01 (fn [x] (* x 2.)) 20)))
-(println (time (getIntegralResult' 0.01 (fn [x] (* x 2.)) 20)))
+(println (time (square 20)))
