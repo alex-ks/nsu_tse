@@ -1,4 +1,4 @@
-(ns task6
+(ns task7
     (require [clojure.test :as test]))
 
 (defn third [lst]
@@ -56,12 +56,17 @@
 (def and! (partial abstract-binary ::and expr?))
 (def ->! (partial abstract-binary ::-> expr?))
 
-(let [v (var! :x)
-      e (and! (or! (var! :x) (var! :y)) (->! (var! :x) (not! (var! :y))))]
-    (println v)
-    (println (var!? v))
-    (println (const!? v))
-    (println e)
-    (println (expr? e))
-    (println (or! e 2)))
+(test/deftest task7-test
+    (test/testing "Testing task 7"
+        (test/is 
+            (let [x (var! :x)]
+                (var!? x)))
+        (test/is
+            (not (const!? (var! :x))))
+        (test/is
+            (let [expr (and! (or! (var! :x) (var! :y)) (->! (var! :x) (not! (var! :y))))]
+                (expr? expr)))
+        (test/is (thrown? AssertionError (or! (var! :x) 2)))))
 
+(test/run-tests 'task7)
+                
