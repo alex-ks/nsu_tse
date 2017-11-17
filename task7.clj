@@ -56,6 +56,28 @@
 (def and! (partial abstract-binary ::and expr?))
 (def ->! (partial abstract-binary ::-> expr?))
 
+(defn normalize-impl [expr]
+    {:pre [(expr? expr)]}
+    (cond 
+        (->!? expr)
+            (or! 
+                (not! (normalize-impl (second expr)))
+                (normalize-impl (third expr)))
+        (and!? expr)
+            (and!
+                (normalize-impl (second expr))
+                (normalize-impl (third expr)))
+        (or!? expr)
+            (or!
+                (normalize-impl (second expr))
+                (normalize-impl (third expr)))
+        (not!? expr)
+            (not! (normalize-impl (second expr)))
+        :else
+            expr))
+
+
+
 (test/deftest task7-test
     (test/testing "Testing task 7"
         (test/is 
