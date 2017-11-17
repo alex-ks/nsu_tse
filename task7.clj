@@ -57,24 +57,46 @@
 (def ->! (partial abstract-binary ::-> expr?))
 
 (defn normalize-impl [expr]
+    {:pre [(expr? expr) (->!? expr)]}
+    (or! 
+        (not! (second expr))
+        (third expr)))
+
+(defn not-expr? [expr]
     {:pre [(expr? expr)]}
-    (cond 
-        (->!? expr)
-            (or! 
-                (not! (normalize-impl (second expr)))
-                (normalize-impl (third expr)))
-        (and!? expr)
-            (and!
-                (normalize-impl (second expr))
-                (normalize-impl (third expr)))
-        (or!? expr)
-            (or!
-                (normalize-impl (second expr))
-                (normalize-impl (third expr)))
-        (not!? expr)
-            (not! (normalize-impl (second expr)))
-        :else
-            expr))
+    (if (not!? expr)
+        (not (or (const!? expr) (var!? expr)))
+        false))
+
+(defn normalize-not-expr [expr]
+    {:pre [(not-expr? expr)]}
+    (let [inner (second expr)]
+        (cond 
+            (and!? inner)
+                (or! 
+                    (not! (second inner))
+                    (not! (third inner)))
+            (or!? inner)
+                (and!
+                    (not! (second inner))
+                    (not! (third inner)))
+            (->!? inner)
+                (and!
+                    (second inner)
+                    (not! (third inner)))
+            :else
+                expr
+        )))
+
+(defn double-not? [expr]
+    {:pre [(expr? expr)]}
+    (if (not!? expr)
+        (not!? (second expr))
+        false))
+
+(defn normalize-double-not [expr]
+    {:pre [(double-not? expr)]}
+    (second (second expr)))
 
 
 
