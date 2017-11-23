@@ -4,6 +4,14 @@
 (defn third [lst]
     (nth lst 2))
 
+(defn mapl [& args]
+    (let [result (apply map args)]
+        (into () (reverse result))))
+
+(defn consl [& args]
+    (let [result (apply cons args)]
+        (into () (reverse result))))
+
 (defn const! [val]
     {:pre [(or (= val true) (= val false))]}
     (list ::const val))
@@ -106,9 +114,9 @@
         (or (var!? expr) (const!? expr))
             expr
         :else
-            (cons
+            (consl
                 (first expr)
-                (map normalize-de-morgan (rest expr)))))
+                (mapl normalize-de-morgan (rest expr)))))
 
 (defn unsafe-normalize-distribution [inner-check inner-op outer-op next-normalize expr]
     (let [fst (second expr)
@@ -132,9 +140,9 @@
         (or!? expr)
             (unsafe-normalize-distribution and!? and! or! normalize-distribution expr)
         :else
-            (cons
+            (consl
                 (first expr)
-                (map normalize-distribution (rest expr)))))
+                (mapl normalize-distribution (rest expr)))))
 
 (defn unsafe-absorption [inner-check inner-op outer-op next-normalize expr]
     (let [fst (second expr)
@@ -161,9 +169,39 @@
         (or!? expr)
             (unsafe-absorption and!? and! or! normalize-absorption expr)
         :else
-            (cons
+            (consl
                 (first expr)
-                (map normalize-absorption (rest expr)))))
+                (mapl normalize-absorption (rest expr)))))
+
+(defn normalize-constants [expr]
+    {:pre [(impl-normalized? expr)]}
+    (if (or (const!? expr) (var!? expr))
+        expr
+        (let [norm-d (consl (first expr) (mapl normalize-constants (rest expr)))]
+            (cond
+                (and 
+                    (and!? norm-d)
+                    (or 
+                        (= (second norm-d) (const! false))
+                        (= (third norm-d) (const! false))))
+                    (const! false)
+                (and 
+                    (or!? norm-d)
+                    (or 
+                        (= (second norm-d) (const! true))
+                        (= (third norm-d) (const! true))))
+                    (const! true)
+                (not!? norm-d)
+                    (cond
+                        (= (second norm-d) (const! true))
+                            (const! false)
+                        (= (second norm-d) (const! false))
+                            (const! true)
+                        :else
+                            norm-d)
+                :else
+                    norm-d
+            ))))
 
 (test/deftest task7-test
     (test/testing "Testing task 7"
@@ -198,8 +236,12 @@
                   result (var! :x)]
                 (= (normalize-absorption expr) result)))
         (test/is
-            (let [expr (or! (or! (var! :x) (const! true)) (var! :x))]
+            (let [expr (or! (and! (var! :x) (const! true)) (var! :y))]
                 (= (normalize-absorption expr) expr)))
+        (test/is
+            (let [expr (or! (or! (var! :x) (const! true)) (var! :x))
+                  result (const! true)]
+                (= (normalize-constants expr) result)))
     ))
 
 (test/run-tests 'task7)
