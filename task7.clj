@@ -57,46 +57,54 @@
 (def ->! (partial abstract-binary ::-> expr?))
 
 (defn normalize-impl [expr]
-    {:pre [(expr? expr) (->!? expr)]}
-    (or! 
-        (not! (second expr))
-        (third expr)))
-
-(defn not-expr? [expr]
     {:pre [(expr? expr)]}
-    (if (not!? expr)
-        (not (or (const!? expr) (var!? expr)))
-        false))
+    (cond 
+        (->!? expr)
+            (or! 
+                (not! (normalize-impl (second expr)))
+                (normalize-impl (third expr)))
+        (or 
+            (and!? expr)
+            (or!? expr))
+            (list
+                (first (expr))
+                (normalize-impl (second expr))
+                (normalize-impl (third expr)))
+        (not!? expr)
+            (not! (normalize-impl (second expr)))
+        :else
+            expr))
 
-(defn normalize-not-expr [expr]
-    {:pre [(not-expr? expr)]}
-    (let [inner (second expr)]
-        (cond 
-            (and!? inner)
-                (or! 
-                    (not! (second inner))
-                    (not! (third inner)))
-            (or!? inner)
-                (and!
-                    (not! (second inner))
-                    (not! (third inner)))
-            (->!? inner)
-                (and!
-                    (second inner)
-                    (not! (third inner)))
-            :else
-                expr
-        )))
-
-(defn double-not? [expr]
+(defn impl-normalized? [expr]
     {:pre [(expr? expr)]}
-    (if (not!? expr)
-        (not!? (second expr))
-        false))
+    (if (->!? expr)
+        false
+        (every? impl-normalized? (rest expr))))
 
-(defn normalize-double-not [expr]
-    {:pre [(double-not? expr)]}
-    (second (second expr)))
+(defn normalize-de-morgan [expr]
+    {:pre [(impl-normalized? expr)]}
+    (cond 
+        (not!? expr)
+            (let [inner (second expr)]
+                (cond
+                    (and!? inner)
+                        (or! 
+                            (not! (normalize-de-morgan (second inner)))
+                            (not! (normalize-de-morgan (third inner))))
+                    (or!? inner)
+                        (and!
+                            (not! (normalize-de-morgan (second inner)))
+                            (not! (normalize-de-morgan (third inner))))
+                    (not!? inner)
+                        (normalize-de-morgan (second inner)) ; remove double not by chance
+                    :else ; constant or var, normalization has no sense
+                        expr))
+        (or (var!? expr) (const!? expr))
+            expr
+        :else
+            (cons
+                (first expr)
+                (map normalize-de-morgan (rest expr)))))
 
 
 
