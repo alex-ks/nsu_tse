@@ -77,9 +77,13 @@
 
 (defn impl-normalized? [expr]
     {:pre [(expr? expr)]}
-    (if (->!? expr)
-        false
-        (every? impl-normalized? (rest expr))))
+    (cond 
+        (->!? expr)
+            false
+        (or (const!? expr) (var!? expr))
+            true
+        :else
+            (every? impl-normalized? (rest expr))))
 
 (defn normalize-de-morgan [expr]
     {:pre [(impl-normalized? expr)]}
@@ -105,6 +109,38 @@
             (cons
                 (first expr)
                 (map normalize-de-morgan (rest expr)))))
+
+(defn unsafe-normalize-distribution [inner-check inner-op outer-op next-normalize expr]
+    (let [fst (second expr)
+          snd (third expr)]
+        (cond
+            (inner-check snd)
+                (inner-op
+                    (outer-op fst (second snd))
+                    (outer-op fst (third snd)))
+            (inner-check fst)
+                (inner-op
+                    (outer-op (second fst) snd)
+                    (outer-op (third fst) snd))
+            :else
+                (outer-op
+                    (next-normalize fst)
+                    (next-normalize snd))))
+)
+
+(defn normalize-distribution [expr]
+    {:pre [(impl-normalized? expr)]}
+    (cond
+        (or (var!? expr) (const!? expr))
+            expr
+        (and!? expr)
+            (unsafe-normalize-distribution or!? or! and! normalize-distribution expr)
+        (or!? expr)
+            (unsafe-normalize-distribution and!? and! or! normalize-distribution expr)
+        :else
+            (cons
+                (first expr)
+                (map normalize-distribution (rest expr)))))
 
 
 
