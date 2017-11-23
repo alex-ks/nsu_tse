@@ -115,17 +115,11 @@
           snd (third expr)]
         (cond
             (inner-check snd)
-                (inner-op
-                    (outer-op fst (second snd))
-                    (outer-op fst (third snd)))
+                (inner-op (outer-op fst (second snd)) (outer-op fst (third snd)))
             (inner-check fst)
-                (inner-op
-                    (outer-op (second fst) snd)
-                    (outer-op (third fst) snd))
+                (inner-op (outer-op (second fst) snd) (outer-op (third fst) snd))
             :else
-                (outer-op
-                    (next-normalize fst)
-                    (next-normalize snd))))
+                (outer-op (next-normalize fst) (next-normalize snd))))
 )
 
 (defn normalize-distribution [expr]
@@ -142,7 +136,34 @@
                 (first expr)
                 (map normalize-distribution (rest expr)))))
 
+(defn unsafe-absorption [inner-check inner-op outer-op next-normalize expr]
+    (let [fst (second expr)
+          snd (third expr)]
+        (cond
+            (inner-check snd)
+                (if (or (= fst (second snd)) (= fst (third snd)))
+                    (next-normalize fst)
+                    (outer-op (next-normalize fst) (next-normalize snd)))
+            (inner-check fst)
+                (if (or (= snd (second fst)) (= fst (third fst)))
+                    (next-normalize snd)
+                    (outer-op (next-normalize fst) (next-normalize snd)))
+            :else
+                (outer-op (next-normalize fst) (next-normalize snd)))))
 
+(defn normalize-absorption [expr]
+    {:pre [(impl-normalized? expr)]}
+    (cond
+        (or (var!? expr) (const!? expr))
+            expr
+        (and!? expr)
+            (unsafe-absorption or!? or! and! normalize-absorption expr)
+        (or!? expr)
+            (unsafe-absorption and!? and! or! normalize-absorption expr)
+        :else
+            (cons
+                (first expr)
+                (map normalize-absorption (rest expr)))))
 
 (test/deftest task7-test
     (test/testing "Testing task 7"
@@ -154,7 +175,32 @@
         (test/is
             (let [expr (and! (or! (var! :x) (var! :y)) (->! (var! :x) (not! (var! :y))))]
                 (expr? expr)))
-        (test/is (thrown? AssertionError (or! (var! :x) 2)))))
+        (test/is (thrown? AssertionError (or! (var! :x) 2)))
+        (test/is 
+            (= (const! true) (const! true)))
+        (test/is 
+            (let [ea (and! (or! (var! :x) (const! true)) (var! :y))
+                  eb (and! (or! (var! :x) (const! true)) (var! :y))]
+                (= ea eb)))
+        (test/is
+            (let [expr (and! (or! (var! :x) (const! true)) (var! :y))
+                  result (or! (and! (var! :x) (var! :y)) (and! (const! true) (var! :y)))]
+                (= (normalize-distribution expr) result)))
+        (test/is
+            (let [expr (or! (and! (var! :x) (const! true)) (var! :y))
+                  result (and! (or! (var! :x) (var! :y)) (or! (const! true) (var! :y)))]
+                (= (normalize-distribution expr) result)))
+        (test/is
+            (let [expr (or! (or! (var! :x) (const! true)) (var! :y))]
+                (= (normalize-distribution expr) expr)))
+        (test/is
+            (let [expr (or! (and! (var! :x) (const! true)) (var! :x))
+                  result (var! :x)]
+                (= (normalize-absorption expr) result)))
+        (test/is
+            (let [expr (or! (or! (var! :x) (const! true)) (var! :x))]
+                (= (normalize-absorption expr) expr)))
+    ))
 
 (test/run-tests 'task7)
                 
